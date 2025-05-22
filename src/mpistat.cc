@@ -268,7 +268,7 @@ int main(int argc, char **argv) {
   }
 
   // sort out the per-type output file format
-  uint64_t digits = std::log10(workers-1)+1;
+  uint64_t digits = std::log10(workers+1)+1;
   sprintf(out_file_format, "%s/%%0%ldld_%%c.out.gz", argv[1],digits);
 
   // set the create work callback
